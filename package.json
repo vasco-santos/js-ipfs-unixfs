@@ -1,5 +1,5 @@
 {
-  "name": "js-ipfs-unixfs",
+  "name": "@vascosantos/js-ipfs-unixfs",
   "version": "1.0.0",
   "description": "JS implementation of the IPFS UnixFS",
   "scripts": {
