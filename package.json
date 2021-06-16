@@ -34,20 +34,20 @@
     "nginnever <ginneversource@gmail.com>",
     "Rod Vagg <rod@vagg.org>",
     "Hugo Dias <hugomrdias@gmail.com>",
-    "Dan Ordille <dordille@gmail.com>",
+    "Vasco Santos <vasco.santos@moxy.studio>",
     "Richard Schneider <makaretu@gmail.com>",
+    "Dan Ordille <dordille@gmail.com>",
     "ᴠɪᴄᴛᴏʀ ʙᴊᴇʟᴋʜᴏʟᴍ <victorbjelkholm@gmail.com>",
+    "Marcin Rataj <lidel@lidel.org>",
     "Richard Littauer <richard.littauer@gmail.com>",
     "JGAntunes <j.goncalo.antunes@gmail.com>",
-    "Marcin Rataj <lidel@lidel.org>",
-    "Irakli Gozalishvili <contact@gozala.io>",
     "Mithgol <getgit@mithgol.ru>",
     "Hector Sanjuan <code@hector.link>",
-    "Vasco Santos <vasco.santos@moxy.studio>",
     "Francisco Baio Dias <xicombd@gmail.com>",
     "Diogo Silva <fsdiogo@gmail.com>",
     "Bernard Mordan <bernard@tableflip.io>",
-    "jbenet <juan@benet.ai>"
+    "jbenet <juan@benet.ai>",
+    "Irakli Gozalishvili <contact@gozala.io>"
   ],
   "workspaces": [
     "packages/*"
