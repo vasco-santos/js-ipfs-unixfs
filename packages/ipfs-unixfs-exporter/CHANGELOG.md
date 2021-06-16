@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 6.0.0 (2021-06-16)
+
+
+### Bug Fixes
+
+* fix typescript typechecking errors ([052eb3f](https://github.com/ipfs/js-ipfs-unixfs/commit/052eb3f3675eb503666c0a5e59d181fd64c27a24))
+* ignore high mode bits passed to constructor ([#53](https://github.com/ipfs/js-ipfs-unixfs/issues/53)) ([8e8d83d](https://github.com/ipfs/js-ipfs-unixfs/commit/8e8d83d757276be7e1cb2581abd4b562cb8209e2))
+* more typescript type fixes ([566e5f9](https://github.com/ipfs/js-ipfs-unixfs/commit/566e5f9318a753226e852bfda5613d344c0a21f3))
+* more typescript type fixes ([5e250c8](https://github.com/ipfs/js-ipfs-unixfs/commit/5e250c80e67cd67690c71b4187b0a7a2882e2a3d))
+* remove node globals ([#52](https://github.com/ipfs/js-ipfs-unixfs/issues/52)) ([5414412](https://github.com/ipfs/js-ipfs-unixfs/commit/5414412b6b228d7922a10210825c9b85b0362af6))
+* replace node buffers with uint8arrays ([#69](https://github.com/ipfs/js-ipfs-unixfs/issues/69)) ([8a5aed2](https://github.com/ipfs/js-ipfs-unixfs/commit/8a5aed2ca76de16778ff37822c058531d4fcdcb5)), closes [#66](https://github.com/ipfs/js-ipfs-unixfs/issues/66)
+* use correct size of the node ([11d8d74](https://github.com/ipfs/js-ipfs-unixfs/commit/11d8d74120a5c1ddf5a9342860f52696d0b86aaa))
+* use ipfs-core-types instead of redefining ipld ([#121](https://github.com/ipfs/js-ipfs-unixfs/issues/121)) ([6cfd51d](https://github.com/ipfs/js-ipfs-unixfs/commit/6cfd51de4f00cf4ee3c6a78c378439b80d0e2c25))
+
+
+### chore
+
+* declare interface types in .d.ts file ([#122](https://github.com/ipfs/js-ipfs-unixfs/issues/122)) ([eaa8449](https://github.com/ipfs/js-ipfs-unixfs/commit/eaa8449c10abed9d9a378bee544b4ff501666c4b))
+* remove node buffers from runtime code ([#66](https://github.com/ipfs/js-ipfs-unixfs/issues/66)) ([db60a42](https://github.com/ipfs/js-ipfs-unixfs/commit/db60a4232e600e73227e6ab8964be083eada389a))
+* upgrade to dag-pb that supports Uint8Array ([#65](https://github.com/ipfs/js-ipfs-unixfs/issues/65)) ([b8b2ee3](https://github.com/ipfs/js-ipfs-unixfs/commit/b8b2ee324f17c4bb8a7931761aee02d1635b6ca2))
+
+
+### Code Refactoring
+
+* use the block API from ipfs instead of ipld internals ([#51](https://github.com/ipfs/js-ipfs-unixfs/issues/51)) ([cfecf39](https://github.com/ipfs/js-ipfs-unixfs/commit/cfecf390ae2747d2b6c55f4ebd039791f7162fec))
+
+
+### Features
+
+* add types ([#114](https://github.com/ipfs/js-ipfs-unixfs/issues/114)) ([ca26353](https://github.com/ipfs/js-ipfs-unixfs/commit/ca26353081ae192718532d3dbd60779863fe6d53))
+* support aborting exports ([#47](https://github.com/ipfs/js-ipfs-unixfs/issues/47)) ([7685e44](https://github.com/ipfs/js-ipfs-unixfs/commit/7685e44ce47b6599d427bf177053fb9e16c43bce))
+
+
+### BREAKING CHANGES
+
+* switches to named exports
+* types are now included with all unixfs modules
+* does not convert input to node Buffers any more, uses Uint8Arrays instead
+* dag-pb Links property now returns DAGLink objects
+* The importer takes a pin argument (previously undocumented) - it used
+to default to true but since this switches to use the block API the
+default has changed to false, as the typical usage pattern is to pin
+the root block of a DAG recursively instead of every block that makes
+up the DAG.
+
+
+
+
+
 ## [5.0.3](https://github.com/ipfs/js-ipfs-unixfs/compare/ipfs-unixfs-exporter@5.0.2...ipfs-unixfs-exporter@5.0.3) (2021-04-20)
 
 **Note:** Version bump only for package ipfs-unixfs-exporter

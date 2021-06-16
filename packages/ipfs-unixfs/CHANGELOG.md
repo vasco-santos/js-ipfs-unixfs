@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 5.0.0 (2021-06-16)
+
+
+### Bug Fixes
+
+* add pbjs namespace ([#145](https://github.com/ipfs/js-ipfs-unixfs/issues/145)) ([dd26b92](https://github.com/ipfs/js-ipfs-unixfs/commit/dd26b92606a935d08221a0bf6709a4954d864259))
+* ignore high mode bits passed to constructor ([#53](https://github.com/ipfs/js-ipfs-unixfs/issues/53)) ([8e8d83d](https://github.com/ipfs/js-ipfs-unixfs/commit/8e8d83d757276be7e1cb2581abd4b562cb8209e2))
+* remove node globals ([#52](https://github.com/ipfs/js-ipfs-unixfs/issues/52)) ([5414412](https://github.com/ipfs/js-ipfs-unixfs/commit/5414412b6b228d7922a10210825c9b85b0362af6))
+* replace node buffers with uint8arrays ([#69](https://github.com/ipfs/js-ipfs-unixfs/issues/69)) ([8a5aed2](https://github.com/ipfs/js-ipfs-unixfs/commit/8a5aed2ca76de16778ff37822c058531d4fcdcb5)), closes [#66](https://github.com/ipfs/js-ipfs-unixfs/issues/66)
+
+
+### chore
+
+* declare interface types in .d.ts file ([#122](https://github.com/ipfs/js-ipfs-unixfs/issues/122)) ([eaa8449](https://github.com/ipfs/js-ipfs-unixfs/commit/eaa8449c10abed9d9a378bee544b4ff501666c4b))
+* remove node buffers from runtime code ([#66](https://github.com/ipfs/js-ipfs-unixfs/issues/66)) ([db60a42](https://github.com/ipfs/js-ipfs-unixfs/commit/db60a4232e600e73227e6ab8964be083eada389a))
+
+
+### Features
+
+* add types ([#114](https://github.com/ipfs/js-ipfs-unixfs/issues/114)) ([ca26353](https://github.com/ipfs/js-ipfs-unixfs/commit/ca26353081ae192718532d3dbd60779863fe6d53))
+
+
+### BREAKING CHANGES
+
+* switches to named exports
+* types are now included with all unixfs modules
+* does not convert input to node Buffers any more, uses Uint8Arrays instead
+
+
+
+
+
 ## [4.0.3](https://github.com/ipfs/js-ipfs-unixfs/compare/ipfs-unixfs@4.0.2...ipfs-unixfs@4.0.3) (2021-04-20)
 
 
