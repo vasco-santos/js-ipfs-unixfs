@@ -1,6 +1,6 @@
 {
   "name": "@vascosantos/ipfs-unixfs-exporter",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "JavaScript implementation of the UnixFs exporter used by IPFS",
   "leadMaintainer": "Alex Potsides <alex.potsides@protocol.ai>",
   "main": "src/index.js",
@@ -56,14 +56,14 @@
     "util": "^0.12.3"
   },
   "dependencies": {
-    "@ipld/dag-cbor": "^5.0.0",
-    "@ipld/dag-pb": "^1.1.0",
+    "@ipld/dag-cbor": "^6.0.0",
+    "@ipld/dag-pb": "^2.0.2",
     "err-code": "^3.0.1",
     "hamt-sharding": "^2.0.0",
     "ipfs-unixfs": "^4.0.3",
     "it-last": "^1.0.5",
     "multicodec": "^3.0.1",
-    "multiformats": "^8.0.3",
+    "multiformats": "^9.0.4",
     "multihashing-async": "^2.1.0"
   },
   "types": "dist/src/index.d.ts",
