@@ -1,6 +1,6 @@
 {
   "name": "@vascosantos/ipfs-unixfs-importer",
-  "version": "9.0.0",
+  "version": "9.0.2",
   "description": "JavaScript implementation of the UnixFs importer used by IPFS",
   "leadMaintainer": "Alex Potsides <alex.potsides@protocol.ai>",
   "main": "src/index.js",
@@ -56,7 +56,7 @@
     "it-first": "^1.0.6",
     "it-parallel-batch": "^1.0.9",
     "merge-options": "^3.0.4",
-    "multicodec": "^3.0.1",
+    "multicodec": "^3.1.0",
     "multiformats": "^9.0.4",
     "multihashing-async": "^2.1.0",
     "rabin-wasm": "^0.1.4",
