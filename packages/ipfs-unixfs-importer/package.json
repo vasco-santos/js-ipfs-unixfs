@@ -46,7 +46,7 @@
     "util": "^0.12.3"
   },
   "dependencies": {
-    "@ipld/dag-pb": "^2.0.2",
+    "@ipld/dag-pb": "^2.1.1",
     "bl": "^5.0.0",
     "err-code": "^3.0.1",
     "hamt-sharding": "^2.0.0",
