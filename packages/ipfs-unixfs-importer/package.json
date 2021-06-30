@@ -1,6 +1,6 @@
 {
   "name": "@vascosantos/ipfs-unixfs-importer",
-  "version": "9.0.3",
+  "version": "10.0.0",
   "description": "JavaScript implementation of the UnixFs importer used by IPFS",
   "leadMaintainer": "Alex Potsides <alex.potsides@protocol.ai>",
   "main": "src/index.js",
