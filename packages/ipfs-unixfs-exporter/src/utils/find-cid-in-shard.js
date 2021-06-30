@@ -159,6 +159,10 @@ const findShardCid = async (node, name, blockService, context, options) => {
   context.hamtDepth++
 
   const block = await blockService.get(link.Hash, options)
+  if (!block) {
+    return null
+  }
+
   node = decode(block.bytes)
 
   return findShardCid(node, name, blockService, context, options)

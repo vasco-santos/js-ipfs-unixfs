@@ -49,6 +49,11 @@ async function * listDirectory (node, path, resolve, depth, blockService, option
     } else {
       // descend into subshard
       const block = await blockService.get(link.Hash)
+
+      if (!block) {
+        return
+      }
+
       node = decode(block.bytes)
 
       for await (const file of listDirectory(node, path, resolve, depth, blockService, options)) {

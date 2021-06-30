@@ -149,7 +149,7 @@ export interface Block {
 
 // TODO: remove this and get from core-ipfs-types
 export interface BlockAPI {
-  get: (cid: CID, options?: BlockOptions) => Promise<Block>
+  get: (cid: CID, options?: BlockOptions) => Promise<Block|undefined>
   put: (block: Block, options?: PutOptions) => Promise<Block>
 }
 

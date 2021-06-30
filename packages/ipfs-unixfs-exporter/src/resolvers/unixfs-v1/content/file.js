@@ -71,6 +71,10 @@ async function * emitBytes (blockService, node, start, end, streamPosition = 0, 
       const block = await blockService.get(childLink.Hash, {
         signal: options.signal
       })
+
+      if (!block) {
+        throw new Error('Block not found')
+      }
       let child
       switch (childLink.Hash.code) {
         case mc.DAG_PB:

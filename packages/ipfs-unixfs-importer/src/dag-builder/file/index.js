@@ -78,6 +78,7 @@ const reduce = (file, block, options) => {
       if (leaf.cid.code === rawCodec.code && (file.mtime !== undefined || file.mode !== undefined)) {
         // only one leaf node which is a buffer - we have metadata so convert it into a
         // UnixFS entry otherwise we'll have nowhere to store the metadata
+        // @ts-ignore
         let { bytes: buffer } = await block.get(leaf.cid, options)
 
         leaf.unixfs = new UnixFS({
