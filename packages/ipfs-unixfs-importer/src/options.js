@@ -2,7 +2,10 @@
 
 const mergeOptions = require('merge-options').bind({ ignoreUndefined: true })
 const multihashing = require('multihashing-async')
-const { sha256 } = require('multiformats/hashes/sha2')
+const { hasher } = require('multiformats')
+const from = hasher.from
+
+const { sha256 } = require('./utils/sha2')
 
 /**
  * @param {Uint8Array} buf
@@ -39,7 +42,7 @@ const defaultOptions = {
   rawLeaves: false,
   onlyHash: false,
   reduceSingleLeafToSelf: true,
-  hasher: sha256,
+  hasher: from(sha256),
   leafType: 'file', // 'raw'
   cidVersion: 0,
   progress: () => () => {},

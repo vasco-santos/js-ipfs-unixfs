@@ -1,11 +1,12 @@
 {
   "name": "@vascosantos/ipfs-unixfs-importer",
-  "version": "10.0.0",
+  "version": "0.0.8",
   "description": "JavaScript implementation of the UnixFs importer used by IPFS",
   "leadMaintainer": "Alex Potsides <alex.potsides@protocol.ai>",
   "main": "src/index.js",
   "browser": {
-    "fs": false
+    "fs": false,
+    "./src/utils/sha2.js": "./src/utils/sha2-browser.js"
   },
   "scripts": {
     "prepare": "aegir build --no-bundle",
@@ -57,7 +58,7 @@
     "it-parallel-batch": "^1.0.9",
     "merge-options": "^3.0.4",
     "multicodec": "^3.1.0",
-    "multiformats": "^9.0.4",
+    "multiformats": "^9.1.2",
     "multihashing-async": "^2.1.0",
     "rabin-wasm": "^0.1.4",
     "uint8arrays": "^2.1.5"
